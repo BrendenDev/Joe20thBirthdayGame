@@ -38,7 +38,16 @@ namespace Player
             bool targetHit = Physics.Raycast(playerCamera.position, playerCamera.forward, out other, 5f);
             if(targetHit && other.collider.gameObject.tag == "NPC")
             {
-                other.collider.gameObject.GetComponent<NonPlayerCharacter>().DamageTaken(damage); 
+                other.collider.gameObject.transform.GetChild(1).GetComponent<Animator>().SetBool("Active", !other.collider.gameObject.transform.GetChild(1).GetComponent<Animator>().GetBool("Active"));
+                other.collider.gameObject.transform.GetChild(0).GetComponent<Animator>().SetBool("Active", !other.collider.gameObject.transform.GetChild(1).GetComponent<Animator>().GetBool("Active"));
+            }
+            else if(targetHit && other.collider.gameObject.tag == "NPCPlus")
+            {
+                Application.OpenURL("https://grouptogether.page.link/jXVf");
+            }
+            else if(targetHit && other.collider.gameObject.tag == "NPCQuit")
+            {
+                Application.Quit();
             }
         }
 
