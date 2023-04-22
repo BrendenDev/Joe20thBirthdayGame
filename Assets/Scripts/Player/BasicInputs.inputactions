@@ -125,15 +125,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Ability One",
-                    "type": "Button",
-                    "id": "6cab7a16-24f5-40f7-ac11-f0ecd413f612",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -145,17 +136,6 @@
                     "processors": "",
                     "groups": "Mouse & Keyboard",
                     "action": "Basic Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3e02e8e3-c4a0-485d-b8d2-d85d74b70a57",
-                    "path": "<Keyboard>/shift",
-                    "interactions": "Hold(duration=3)",
-                    "processors": "",
-                    "groups": "Mouse & Keyboard",
-                    "action": "Ability One",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
